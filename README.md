@@ -15,4 +15,5 @@ All Event Listener are listening to Email Event only. But are defined with @Orde
 
 1. Import project as Maven project
 2. Run application as Spring Boot Application
-3. Observe log to see the sequence of execution and relate it with the code in ExampleService.java
+3. Launch URL: "http://localhost:8080/sendEmail". This will call EmailController which calls EmailService in turn which publishes the event to send email.
+4. Observe log to see the sequence of event listener execution and relate it with differnt defined listeners
